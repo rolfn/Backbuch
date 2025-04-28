@@ -1,0 +1,22 @@
+
+%---------------------------
+\documentclass[a4paper]{article}
+\usepackage{iftex}
+\ifpdftex\pdfsuppresswarningpagegroup=1 \fi
+\usepackage{pdfpages}
+
+\begin{document}
+
+\includepdf[%
+%,frame
+,noautoscale
+,turn=false
+,landscape
+,nup=2x1
+,delta={0 8mm}
+,signature=4
+,flip-other-edge
+,pages=2-]{Royal-Backbuch-orig.pdf}
+
+\end{document}
+%---------------------------
