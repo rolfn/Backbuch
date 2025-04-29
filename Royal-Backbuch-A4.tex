@@ -6,15 +6,15 @@
 \usepackage{pdfpages}
 
 \AddToShipoutPictureFG{%
-  \AtPageCenter{%
-    \put(-.5\paperheight,0){\line(1,0){\paperheight}}%
+  \AtPageUpperLeft{%
+    \put(0,-.5\paperheight){\line(1,0){\paperheight}}%
   }%
 }%
 
 \begin{document}
 
 \includepdf[%
-,frame
+%,frame
 ,noautoscale
 ,turn=false
 ,landscape
