@@ -5,16 +5,11 @@
 \ifpdftex\pdfsuppresswarningpagegroup=1 \fi
 \usepackage{pdfpages}
 
-\AddToShipoutPictureFG{%
-  \AtPageUpperLeft{%
-    \put(0,-.5\paperheight){\line(1,0){\paperheight}}%
-  }%
-}%
-
 \begin{document}
 
 \includepdf[%
 %,frame
+,picturecommand={\put(0,.5\paperheight){\line(1,0){\paperheight}}}%
 ,noautoscale
 ,turn=false
 ,landscape
