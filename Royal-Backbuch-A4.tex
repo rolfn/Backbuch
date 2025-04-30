@@ -1,4 +1,4 @@
-
+% Rolf Niepraschk, 2025-04-29
 %---------------------------
 \documentclass[a4paper]{article}
 \usepackage{iftex}
@@ -9,7 +9,7 @@
 
 \includepdf[%
 %,frame
-,picturecommand={\put(0,.5\paperheight){\line(1,0){\paperheight}}}%
+%,picturecommand={\put(0,.5\paperheight){\thicklines\line(1,0){\paperwidth}}}%
 ,noautoscale
 ,turn=false
 ,landscape
@@ -17,7 +17,8 @@
 ,delta={0 8mm}
 ,signature=4
 ,flip-other-edge
-,pages=2-]{Royal-Backbuch.pdf}
+,pages=2-
+]{Royal-Backbuch.pdf}
 
 \end{document}
 %---------------------------
