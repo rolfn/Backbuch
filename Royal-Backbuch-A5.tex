@@ -1,6 +1,6 @@
-% Rolf Niepraschk, 2025-04-29
+% Rolf Niepraschk, 2025-05-06
 %---------------------------
-\documentclass[a4paper]{article}
+\documentclass[a5paper]{article}
 \usepackage{iftex}
 \ifpdftex\pdfsuppresswarningpagegroup=1 \fi
 \usepackage{pdfpages}
@@ -9,14 +9,8 @@
 
 \includepdf[%
 %,frame
-%,picturecommand={\put(0,.5\paperheight){\thicklines\line(1,0){\paperwidth}}}%
 ,noautoscale
-,turn=false
-,landscape
-,nup=2x1
-,delta={0 8mm}
-,signature=4
-,flip-other-edge
+,delta={8mm 0}
 ,pages=-
 ]{Royal-Backbuch.pdf}
 

@@ -30,6 +30,9 @@ SCANS := $(addprefix $(SCANS_DIR), $(SCANS))
 
 Royal-Backbuch-A4.pdf : Royal-Backbuch-A4.tex Royal-Backbuch.pdf
 	$(LATEX) $<
+	
+Royal-Backbuch-A5.pdf : Royal-Backbuch-A5.tex Royal-Backbuch.pdf
+	$(LATEX) $<
 
 Royal-Backbuch.pdf : Royal-Backbuch.tex $(SCANS)
 	$(LATEX) $<
