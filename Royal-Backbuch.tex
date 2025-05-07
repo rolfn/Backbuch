@@ -1,27 +1,22 @@
-% Rolf Niepraschk, 2025-04-27
-%---------------------------
+% Rolf Niepraschk, 2025-05-07
+%----------------------------
 \documentclass[twoside]{article}
 % Originalgröße: 150mm x 172mm = 425,197bp x 487,559bp
 \usepackage[%
 ,papersize={150mm,172mm}
 ]{geometry}
-\usepackage{xcolor}
-\usepackage{afterpage,pdfpages}
+\usepackage{xcolor,pdfpages}
 \graphicspath{{./scans/}}
-\includepdfset{%
-,noautoscale
-}
-
-\AddToHookNext{shipout/before}{\DiscardShipoutBox}%
+\includepdfset{noautoscale}
 
 \begin{document}
 
 % Farbseite
-\includepdf[openright,%
-  pagecommand*={\afterpage{\pagecolor{black}}}]{0a-mod.jpg}
+\pagecolor{black}
+\includepdf{0a-mod.jpg}
 \nopagecolor
 %
-\includepdfmerge[offset={7bp 0}]{% Abstand vom inneren Rand: 11mm
+\includepdfmerge[offset={-7bp 0}]{% Abstand vom inneren Rand: 11mm
   0b-mod.png,
   0c-mod.png,
   0d-mod.png,
@@ -52,10 +47,10 @@
 }
 %
 % Farbseiten
-\includepdf[offset=2.58bp 0]{24_0a-mod.jpg}% Abstand vom inneren Rand: 19,3mm
-\includepdf[offset=-1bp 0]{24_0b-mod.jpg}% Abstand vom inneren Rand: 9,9mm
+\includepdf[offset=-2.58bp 0]{24_0a-mod.jpg}% Abstand vom inneren Rand: 19,3mm
+\includepdf[offset=1bp 0]{24_0b-mod.jpg}% Abstand vom inneren Rand: 9,9mm
 %
-\includepdfmerge[offset={7bp 0}]{% Abstand vom inneren Rand: 11mm
+\includepdfmerge[offset={-7bp 0}]{% Abstand vom inneren Rand: 11mm
   25-mod.png,
   26-mod.png,
   27-mod.png,
@@ -78,12 +73,12 @@
   44-mod.png
 }
 % Farbseiten
-\includepdf[offset=-4.7bp 0]{44_0a-mod.jpg}% Abstand vom inneren Rand: 11mm
-\includepdf[offset=-1.33bp 0]{44_0b-mod.jpg}% Abstand vom inneren Rand: 11mm
-\includepdf[offset=2.8bp 0]{44_0c-mod.jpg}% Abstand vom inneren Rand: 11mm
-\includepdf[offset=7.82bp 0]{44_0d-mod.jpg}% Abstand vom inneren Rand: 11mm
+\includepdf[offset=4.7bp 0]{44_0a-mod.jpg}% Abstand vom inneren Rand: 11mm
+\includepdf[offset=1.33bp 0]{44_0b-mod.jpg}% Abstand vom inneren Rand: 11mm
+\includepdf[offset=-2.8bp 0]{44_0c-mod.jpg}% Abstand vom inneren Rand: 11mm
+\includepdf[offset=-7.82bp 0]{44_0d-mod.jpg}% Abstand vom inneren Rand: 11mm
 %
-\includepdfmerge[offset={7bp 0}]{% Abstand vom inneren Rand: 11mm
+\includepdfmerge[offset={-7bp 0}]{% Abstand vom inneren Rand: 11mm
   45-mod.png,
   46-mod.png,
   47-mod.png,
@@ -106,10 +101,10 @@
   64-mod.png
 }
 % Farbseiten
-\includepdf[offset={-0.8bp 0}]{64_0a-mod.jpg}% Abstand vom inneren Rand: 11mm
-\includepdf[offset={-1.2bp 0}]{64_0b-mod.jpg}% Abstand vom inneren Rand: 21mm
+\includepdf[offset={0.8bp 0}]{64_0a-mod.jpg}% Abstand vom inneren Rand: 11mm
+\includepdf[offset={1.2bp 0}]{64_0b-mod.jpg}% Abstand vom inneren Rand: 21mm
 %
-\includepdfmerge[offset={7bp 0}]{% Abstand vom inneren Rand: 11mm
+\includepdfmerge[offset={-7bp 0}]{% Abstand vom inneren Rand: 11mm
   65-mod.png,
   66-mod.png,
   67-mod.png,
