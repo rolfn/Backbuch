@@ -1,5 +1,5 @@
 
-# Rolf Niepraschk, 2025-04-28
+# Rolf Niepraschk, 2025-05-11
 
 .SUFFIXES : .tex .pdf .png .jpg
 
@@ -38,10 +38,12 @@ Royal-Backbuch.pdf : Royal-Backbuch.tex $(SCANS)
 	$(LATEX) $<
 
 clean :
-	$(RM) $(addprefix Royal-Backbuch, .log .aux) $(addprefix Royal-Backbuch-A4, .log .aux)
+	$(RM) $(addprefix Royal-Backbuch, .log .aux) \
+	      $(addprefix Royal-Backbuch-A4, .log .aux) \
+	      $(addprefix Royal-Backbuch-A5, .log .aux)
 
 veryclean : clean
-	$(RM) Royal-Backbuch.pdf Royal-Backbuch-A4.pdf
+	$(RM) Royal-Backbuch.pdf Royal-Backbuch-A4.pdf Royal-Backbuch-A5.pdf
 
 .PHONY : $(SCANS_DIR)
 
